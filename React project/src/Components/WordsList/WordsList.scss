@@ -1,0 +1,23 @@
+@import '../../styles/vars';
+
+.wordsList {
+    display: flex;
+    flex-direction: column;
+
+    .wordsList_headers {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .wordsList_words {
+        display: flex;
+        flex-direction: column;
+        font-family: $font-normal
+    }
+    h2 {
+        width: 42vh;
+        text-align: center;
+        font-family: $font-header
+    }
+}
+

@@ -1,0 +1,37 @@
+@import '../../styles/vars';
+
+.cardWord_container {
+    border: 1px solid $primary-color;
+    background-color: $background-color;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-normal;
+    width: 100vh;
+    height: 30vh;
+
+    .cardWord_container_englishWord {
+        font-size: 2em;
+        font-weight: bold;
+        position: relative;
+        top: 3vh;
+    }
+
+    .cardWord_container_transcription {
+        position: relative;
+        top: -4vh;
+    }
+
+    .check_button {
+        background-color: $button-color;
+        position: relative;
+        top: -3vh;
+        border-radius: 8px;
+        height: 5vh;
+        width: 15vh;
+        border: 0;
+    }
+}

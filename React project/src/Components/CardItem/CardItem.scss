@@ -1,0 +1,26 @@
+@import '../../styles/vars';
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+    .container_input {
+        width: 41.5vh;
+        border: 1px solid $primary-color;
+        font-family: $font-normal;
+        font-size: 1em;
+    }
+    .container_div {
+        width: 42vh;
+        border: 1px solid $primary-color;
+    }
+
+    .middle_button {
+        background-color: $button-color;
+        border-radius: 10px;
+        height: 2vw;
+        margin: 2px;
+        width: 15vh;
+        border: 1px solid $primary-color;
+    }
+}

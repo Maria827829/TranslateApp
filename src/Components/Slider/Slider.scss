@@ -1,0 +1,19 @@
+@import '../../styles/vars';
+
+.dataWord_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: $font;
+    height: 70vh;
+    align-items: center;
+
+    .arrow {
+        width: 40%;
+    }
+    .arrow__button {
+        background-color: $background-color;
+        border: none;
+        width: 10%;
+    }
+}

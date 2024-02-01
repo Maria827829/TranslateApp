@@ -1,0 +1,34 @@
+@import '../../styles/vars';
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    background-color: $button-color;
+    height: 10vh;
+    font-family: $font;
+    font-size: 1.5em;
+
+    .nav_logo {
+        width: 10%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70vh;
+    }
+
+    .nav_link {
+        color: $background-color;
+    }
+
+    .nav_link:hover {
+        color: $border-color;
+    }
+}
