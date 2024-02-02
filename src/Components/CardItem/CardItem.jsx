@@ -56,7 +56,9 @@ function CardItem(props) {
           onChange={(e) => handleChange(e, 'tags')}
           className='container_input'
           />
+          <button className='middle_button' onClick={handleCancel}>Сохранить</button>
           <button className='middle_button' onClick={handleCancel}>Отмена</button>
+
           </>
         ) : (
           <>

@@ -4,7 +4,8 @@ import { useState} from 'react';
 function CardWord(props) {
     const [pressed, setPressed] = useState(false);
     const handleChange = () => {
-        setPressed(!pressed)
+        setPressed(!pressed);
+        props.countWords();
     }
     return (
         <>

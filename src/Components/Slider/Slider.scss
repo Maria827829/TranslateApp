@@ -1,19 +1,35 @@
 @import '../../styles/vars';
 
-.dataWord_container {
+.dataWord{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    font-family: $font;
     height: 70vh;
-    align-items: center;
+    .dataWord_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: $font;
+        align-items: center;
 
-    .arrow {
-        width: 40%;
-    }
-    .arrow__button {
-        background-color: $background-color;
-        border: none;
-        width: 10%;
+        .arrow {
+            width: 40%;
+        }
+        .arrow__button {
+            background-color: $background-color;
+            border: none;
+            width: 10%;
+        }
+        }
+    .words__counter {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        color: $button-color;
+        font-family: $font;
+        font-size: 1.5em;
     }
 }
