@@ -1,5 +1,5 @@
 import '../CardWord/CardWord.scss';
-import { useState} from 'react';
+import { useState, useEffect, useRef} from 'react';
 
 function CardWord(props) {
     const [pressed, setPressed] = useState(false);
@@ -7,12 +7,14 @@ function CardWord(props) {
         setPressed(!pressed);
         props.countWords();
     }
+    const ref = useRef();
+    useEffect(() => ref.current.focus(), []);
     return (
         <>
         <div className='cardWord_container'>
             <p className='cardWord_container_englishWord'>{pressed ? props.russian : props.english}</p>
             <p className='cardWord_container_transcription'>{ pressed ? '' : props.transcription}</p>
-            <button onClick={handleChange} className='check_button'>
+            <button onClick={handleChange} ref={ref} className='check_button'>
                 {pressed ? 'Скрыть' : 'Проверить'}
                 </button>
         </div>
